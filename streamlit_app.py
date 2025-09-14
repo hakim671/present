@@ -13,7 +13,7 @@ st.markdown("Ты очень дорога для меня. Вот маленьк
 st.subheader("⏳ До нашей особенной даты осталось:")
 
 # 👉 Введи здесь дату (год, месяц, день)
-event_date = datetime.datetime(2026, 12, 01, 0, 0, 0)  
+event_date = datetime.datetime(2026, 12, 1, 0, 0, 0)  
 now = datetime.datetime.now()
 delta = event_date - now
 
