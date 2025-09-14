@@ -69,8 +69,12 @@ compliments = [
 ]
 
 st.subheader("🌸 Получи комплимент 🌸")
+с=0
 if st.button("💝 Нажми меня"):
-    st.success(random.choice(compliments))
+    c=c+1
+    if c==10:
+        st.write("Не много тебе комплементов😘? Ну ладно нажми ещё раз"
+    else: st.success(random.choice(compliments))
 
 # 🌟 Немного атмосферы
 st.markdown("---")
