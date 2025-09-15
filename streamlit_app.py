@@ -73,9 +73,9 @@ if "c" not in st.session_state:
 if st.button("💝 Нажми меня"):
     st.session_state.c += 1
     if st.session_state.c == 5:
-        st.write("Не много ли тебе комплементов🙄? Ну ладно нажми ещё раз")
+        st.error("Не много ли тебе комплементов🙄? Ну ладно нажми ещё раз")
     else:
-        st.error(random.choice(compliments))
+        st.success(random.choice(compliments))
 
 # 🌟 Немного атмосферы
 st.markdown("---")
