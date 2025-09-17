@@ -72,7 +72,7 @@ if st.button("💝 Нажми меня"):
     st.session_state.c += 1
     if st.session_state.c == 5:
         st.error("Не много ли тебе комплементов🙄? Ну ладно нажми ещё раз")
-    if not st.session_state.compliments :
+    elif not st.session_state.compliments :
         st.error("Комплименты закончились😔😘")
     else:
         s = random.choice(st.session_state.compliments)
