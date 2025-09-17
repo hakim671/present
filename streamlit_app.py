@@ -72,8 +72,12 @@ if st.button("💝 Нажми меня"):
     st.session_state.c += 1
     if st.session_state.c == 5:
         st.error("Не много ли тебе комплементов🙄? Ну ладно нажми ещё раз")
+    if not compliments :
+        st.error("Комплименты закончились😔😘")
     else:
-        st.success(random.choice(compliments))
+        s = random.choice(compliments)
+        st.success(s)
+        compliments.remove(s)
 
 # 🌟 Немного атмосферы
 st.markdown("---")
